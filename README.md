@@ -27,11 +27,17 @@ This website includes a gallery to display the product of the textile designer a
 
 https://user-images.githubusercontent.com/64982040/133218368-b78e436a-34b4-4912-b827-d1f19259b805.mp4
 
+### Gallery & Expanded Image of Pattern
+
+<img width="1440" alt="Screenshot 2021-09-14 at 1 37 03 PM" src="https://user-images.githubusercontent.com/64982040/133221149-3818f72f-4e82-4fbe-95b9-0f0787dbd99e.png">
+
+https://user-images.githubusercontent.com/64982040/133220863-863a3280-2f27-4e0f-bd04-78ea613f7223.mp4
+
 
 ### Review Page
 
-
 <img width="1440" alt="Screenshot 2021-07-27 at 6 35 47 PM" src="https://user-images.githubusercontent.com/64982040/133215684-ca68c222-3c64-4763-86db-074889d3e1b7.png">
+
 
 ### To run the project 
 
