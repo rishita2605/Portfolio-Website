@@ -1,0 +1,344 @@
+@-webkit-keyframes firstImage {
+  0% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(14deg);
+            transform: rotateZ(14deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+}
+
+@keyframes firstImage {
+  0% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(14deg);
+            transform: rotateZ(14deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+}
+
+@-webkit-keyframes middleImage {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(14deg);
+            transform: rotateZ(14deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes middleImage {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(14deg);
+            transform: rotateZ(14deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes thirdImage {
+  0% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+}
+
+@keyframes thirdImage {
+  0% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-14deg);
+            transform: rotateZ(-14deg);
+  }
+}
+
+@-webkit-keyframes translateFrame {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  25% {
+    -webkit-transform: translateY(-58%);
+            transform: translateY(-58%);
+  }
+  50% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  75% {
+    -webkit-transform: translateY(18%);
+            transform: translateY(18%);
+  }
+  100% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+}
+
+@keyframes translateFrame {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  25% {
+    -webkit-transform: translateY(-58%);
+            transform: translateY(-58%);
+  }
+  50% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  75% {
+    -webkit-transform: translateY(18%);
+            transform: translateY(18%);
+  }
+  100% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+}
+
+.home {
+  height: 80%;
+}
+
+.home-main-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2vw;
+}
+
+.home-main-content .heading-text {
+  letter-spacing: 0.1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.home-main-content .heading-text .sub-heading {
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.home-main-content .heading-text .main-heading {
+  line-height: 1.1em;
+}
+
+.home-main-content .heading-text .main-heading .main-heading-1 {
+  font-family: 'Prata', serif;
+  text-transform: capitalize;
+}
+
+.home-main-content .heading-text .main-heading .main-heading-2 {
+  font-family: 'Satisfy', cursive;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+.home-main-content .images-section-parent {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  height: 100vh;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+.home-main-content .images-section-parent::-webkit-scrollbar {
+  display: none;
+}
+
+.home-main-content .images-section-parent .images-section {
+  -webkit-animation: translateFrame 26s 1s infinite ease;
+          animation: translateFrame 26s 1s infinite ease;
+}
+
+.home-main-content .images-section-parent .image-container-2 {
+  -webkit-animation: middleImage 26s 1s infinite ease;
+          animation: middleImage 26s 1s infinite ease;
+}
+
+.home-main-content .images-section-parent .image-container-1 {
+  -webkit-animation: firstImage 26s 1s infinite ease;
+          animation: firstImage 26s 1s infinite ease;
+}
+
+.home-main-content .images-section-parent .image-container-3 {
+  -webkit-animation: thirdImage 26s 1s infinite ease;
+          animation: thirdImage 26s 1s infinite ease;
+}
+
+.home-main-content .images-section-parent .image-container {
+  height: 335px;
+  width: 577px;
+  border-radius: 500px;
+  border: 3px solid #3F2926;
+  -webkit-box-shadow: 4px 1px 20px #3f292649;
+          box-shadow: 4px 1px 20px #3f292649;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30vh;
+}
+
+.home-main-content .images-section-parent .image-container .image {
+  height: 90%;
+  width: 92%;
+  border-radius: 400px;
+  background-image: url("../images/bedroom-3778695_1920.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-main-content .dots {
+  font-size: 2em;
+}
+
+.home-main-content .dots .gallery {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  background: transparent;
+  color: #f0f0f0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  padding: 0.5em;
+  overflow: visible;
+}
+
+.home-main-content .dots .gallery:hover #topleft {
+  -webkit-transform: translateX(-5px) translateY(-5px) rotateZ(180deg);
+          transform: translateX(-5px) translateY(-5px) rotateZ(180deg);
+}
+
+.home-main-content .dots .gallery:hover #topright {
+  -webkit-transform: translateX(5px) translateY(-5px) rotateZ(180deg);
+          transform: translateX(5px) translateY(-5px) rotateZ(180deg);
+}
+
+.home-main-content .dots .gallery:hover #bottomright {
+  -webkit-transform: translateX(5px) translateY(5px) rotateZ(180deg);
+          transform: translateX(5px) translateY(5px) rotateZ(180deg);
+}
+
+.home-main-content .dots .gallery:hover #bottomleft {
+  -webkit-transform: translateX(-5px) translateY(5px) rotateZ(180deg);
+          transform: translateX(-5px) translateY(5px) rotateZ(180deg);
+}
+
+.home-main-content .dots .gallery svg {
+  overflow: visible;
+}
+
+.home-main-content .dots .gallery svg #topleft, .home-main-content .dots .gallery svg #topright, .home-main-content .dots .gallery svg #bottomleft, .home-main-content .dots .gallery svg #bottomright {
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+/*# sourceMappingURL=copypaste.css.map */

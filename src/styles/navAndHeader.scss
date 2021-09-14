@@ -1,0 +1,101 @@
+
+$bg-brown:#895D57;
+$font-color:#f0f0f0;
+$dark-brown:#3F2926;
+$link-brown:#c7877f;
+@mixin removeStyles {
+    border: none;
+    text-decoration: none;
+    outline: none;
+    background: transparent;
+}
+
+.navigation{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    //border: 2px solid palevioletred;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-left: 1em;
+    background-color: rgba($color: $dark-brown, $alpha: 0.7);
+    z-index: 10;
+    .nav-item{
+        margin-right: 1.5em;
+    }
+}
+
+.logo-query{
+    position:relative;
+    z-index:10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    //border: 2px solid red;
+    background-color: rgba($color: $dark-brown, $alpha: 1);
+    z-index: 10;
+    //backdrop-filter: blur(20px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding:0 1em ;
+    letter-spacing: 0.1em;
+    .logo{
+        background-image: url('../images/logo.png');
+        background-repeat: no-repeat;
+        background-position: 0%;
+        background-size: cover;
+        height: 3.5em;
+        width: 14em;
+    }
+}
+
+.navigation,.query{
+    
+    .nav-item{
+        @include removeStyles();
+        width: fit-content;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        //border: 2px solid palevioletred;
+        color: $font-color;
+        &::after{
+            content: " ";
+            position:absolute;
+            //bottom: -8px;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            border-bottom: 3px solid $font-color;
+            background-color: transparent;
+            height: 0em;
+            display: block;
+            transform: translateX(-120%);
+            transition: transform 500ms ease, border 800ms ease, height 500ms ease 800ms;
+            width: 100%;
+
+        }
+
+        &:hover::after{
+            //height: 0.5em; //to animate height (seems too much too much) 
+            //check with others 
+            background-color: #3F2926;
+            border-bottom: 3px solid $link-brown;
+            transform: translateX(0%);
+        }
+    }
+}
+
+.navigation .selected{
+    padding: 0.1em 0.7em;
+    border-radius: 0.4em ;
+    background-color: #2b1d1a !important;
+    //border: 2px solid palevioletred !important;
+}

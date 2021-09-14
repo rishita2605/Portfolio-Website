@@ -1,0 +1,219 @@
+
+$bg-brown:#895D57;
+$font-color:#f0f0f0;
+$dark-brown:#3F2926;
+
+@mixin removeStyles {
+    border: none;
+    text-decoration: none;
+    outline: none;
+    background: transparent;
+}
+
+@keyframes firstImage {
+    0%{
+        transform: rotateZ(-14deg);//middle picture
+    }
+
+    25%{
+        transform: rotateZ(14deg);//last picture 
+    }
+
+    50%{
+        transform: rotateZ(-14deg);//middle picture 
+    }
+
+    75%{
+        transform: rotateZ(0deg); //first picture
+    }
+    100%{
+        transform: rotateZ(-14deg); //middle picture
+    }
+}
+
+@keyframes middleImage{
+    0%{
+        transform: rotateZ(0deg);//middle picture
+    }
+
+    25%{
+        transform: rotateZ(14deg);//last picture
+    }
+
+    50%{
+        transform: rotateZ(0deg);//middle picture 
+    }
+
+    75%{
+        transform: rotateZ(-14deg); //first picture
+    }
+    100%{
+        transform: rotateZ(0deg); //middle picture
+    }
+}
+
+@keyframes thirdImage {
+    0%{
+        transform: rotateZ(-14deg);//middle picture
+    }
+
+    25%{
+        transform: rotateZ(0deg);//last picture
+    }
+
+    50%{
+        transform: rotateZ(-14deg);//middle picture 
+    }
+
+    75%{
+        transform: rotateZ(-14deg); //first picture
+    }
+    100%{
+        transform: rotateZ(-14deg); //middle picture
+    }
+}
+
+@keyframes translateFrame {
+    0%{
+        transform: translateY(-20%);//middle picture
+    }
+
+    25%{
+        transform: translateY(-58%);//last picture
+    }
+
+    50%{
+        transform: translateY(-20%);//middle picture 
+    }
+
+    75%{
+        transform: translateY(18%); //first picture
+    }
+    100%{
+        transform: translateY(-20%); //middle picture
+    }
+}
+.home{
+    height: 80%; //all other pages height should be this
+    //border: 2px solid rgb(216, 174, 112);
+}
+.home-main-content{
+    //border: 2px solid #afeeee;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    .heading-text{
+        letter-spacing: 0.1em;
+        //border: 2px solid palevioletred;
+        width: fit-content;
+        position: relative;
+        user-select: none;
+        //top: 30%;
+        .sub-heading{
+            //border: 2px solid rgb(253, 201, 218);
+            text-transform: uppercase;
+            width: 100%;
+        }
+        .main-heading{
+            // font-size: 4em;
+            //border: 2px solid rgb(219, 90, 50);
+            
+            line-height: 1.1em;
+            .main-heading-1{
+                font-family: 'Prata', serif;
+                text-transform: capitalize;
+            }
+            .main-heading-2{
+                //font-family: 'Princess Sofia', cursive;
+                font-family: 'Satisfy', cursive; //check which font to give 
+                text-align: right;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .images-section-parent{
+        //border: 2px solid brown;
+        position: absolute;
+        top: 0;
+        left: 45%;
+        height: 100vh;
+        overflow: hidden;
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        
+        .images-section{
+            //transform: translateY(-18%);
+            animation: translateFrame 26s 1s infinite ease;
+        }
+        
+        .image-container-2{
+            animation: middleImage 26s 1s infinite ease;
+        }
+        .image-container-1{
+            animation: firstImage 26s 1s infinite ease;
+        }
+        .image-container-3{
+            animation: thirdImage 26s 1s infinite ease;
+        }
+
+        .image-container{
+            height: 335px;
+            width: 577px;
+            border-radius: 500px;
+            border: 3px solid $dark-brown;
+            box-shadow: 4px 1px 20px #3f292649;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 6em;
+
+            .image{
+                height: 90%;
+                width: 92%;
+                border-radius: 400px;
+                background-image: url('../images/bedroom-3778695_1920.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+        }
+    }
+
+    .dots{
+        .gallery{
+            @include removeStyles();
+            color: $font-color;
+            transform: scale(1);
+            padding: 0.5em;
+            overflow:visible;
+            &:hover #topleft{
+                transform: translateX(-5px) translateY(-5px) rotateZ(180deg);
+            }
+            &:hover #topright{
+                transform: translateX(5px) translateY(-5px) rotateZ(180deg);
+            }
+            &:hover #bottomright{
+                transform: translateX(5px) translateY(5px) rotateZ(180deg);
+            }
+            &:hover #bottomleft{
+                transform: translateX(-5px) translateY(5px) rotateZ(180deg);
+            }
+            
+            svg{
+                //transform: scale(10);
+                overflow:visible;
+                #topleft, #topright, #bottomleft, #bottomright{
+                    transition: transform 500ms ease;
+                    transform-origin: center;
+                }
+            }
+            
+        }
+        font-size: 2em;
+    }
+}

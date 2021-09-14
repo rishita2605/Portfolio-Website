@@ -1,0 +1,278 @@
+/* 
+font-family: 'Reem Kufi', sans-serif; 
+font-family: 'Prata', serif;
+font-family: 'Princess Sofia', cursive;
+font-family: 'Satisfy', cursive;
+*/
+.comments {
+  height: 80%;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.comments .review-left-heading {
+  letter-spacing: 0.03em;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.comments .left-child,
+.comments .right-child {
+  width: 50%;
+}
+
+.comments .left-child {
+  border-right: 3px solid #3F2926;
+}
+
+.comments .left-child .form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 90%;
+}
+
+.comments .left-child .form-content input,
+.comments .left-child .form-content textarea,
+.comments .left-child .form-content button {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  background: transparent;
+  margin-top: 4vh;
+}
+
+.comments .left-child .form-content .review-name,
+.comments .left-child .form-content .review {
+  border: 2px solid rgba(63, 41, 38, 0.7);
+  border-radius: 3px;
+  padding: 20px;
+  color: #f0f0f0;
+  font-size: 1.1em;
+  width: 100%;
+}
+
+.comments .left-child .form-content .review-name::-webkit-input-placeholder,
+.comments .left-child .form-content .review::-webkit-input-placeholder {
+  color: #3F2926;
+  opacity: 0.7;
+}
+
+.comments .left-child .form-content .review-name:-ms-input-placeholder,
+.comments .left-child .form-content .review:-ms-input-placeholder {
+  color: #3F2926;
+  opacity: 0.7;
+}
+
+.comments .left-child .form-content .review-name::-ms-input-placeholder,
+.comments .left-child .form-content .review::-ms-input-placeholder {
+  color: #3F2926;
+  opacity: 0.7;
+}
+
+.comments .left-child .form-content .review-name::placeholder,
+.comments .left-child .form-content .review::placeholder {
+  color: #3F2926;
+  opacity: 0.7;
+}
+
+.comments .left-child .form-content .review-name:focus,
+.comments .left-child .form-content .review:focus {
+  border: 3px solid #3f2926;
+}
+
+.comments .left-child .form-content .review-name {
+  height: 56px;
+}
+
+.comments .left-child .form-content .review {
+  height: 220px;
+  resize: none;
+}
+
+.comments .left-child .form-content .submit-review-btn {
+  background-color: #3F2926;
+  height: 40px;
+  width: 30%;
+  color: #f0f0f0;
+  border-radius: 2.5em;
+  -webkit-box-shadow: 0 3px 2px rgba(63, 41, 38, 0.6);
+          box-shadow: 0 3px 2px rgba(63, 41, 38, 0.6);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 170ms ease-in-out;
+  transition: all 170ms ease-in-out;
+}
+
+.comments .left-child .form-content .submit-review-btn:hover {
+  -webkit-box-shadow: 0 3px 5px rgba(63, 41, 38, 0.6);
+          box-shadow: 0 3px 5px rgba(63, 41, 38, 0.6);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.comments .right-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.comments .right-child .best-review-parent {
+  width: 85%;
+  text-align: center;
+}
+
+.comments .right-child .best-review-parent .best-review {
+  font-size: 2.3em;
+  line-height: 1.2em;
+  font-family: 'Satisfy', cursive;
+}
+
+.comments .right-child .best-review-parent .best-reviewer {
+  text-align: right;
+  font-size: 1.1em;
+  margin-top: 1em;
+}
+
+.comments .right-child .view-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5vh;
+}
+
+.comments .right-child .view-comments #dot-1, .comments .right-child .view-comments #dot-2, .comments .right-child .view-comments #dot-3 {
+  opacity: 0.5;
+}
+
+.comments .right-child .view-comments-btn {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #2b1d1a;
+  font-size: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  margin-right: 12px;
+}
+
+.comments .container {
+  max-width: 640px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+.comments ul.ks-cboxtags {
+  list-style: none;
+  padding: 20px;
+}
+
+.comments ul.ks-cboxtags li {
+  display: inline;
+}
+
+.comments ul.ks-cboxtags li label {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(139, 139, 139, 0.3);
+  color: #adadad;
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.comments ul.ks-cboxtags li label {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.comments ul.ks-cboxtags li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "\f067";
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.comments ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+  content: "\f00c";
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.comments ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+  border: 2px solid #1bdbf8;
+  background-color: #12bbd4;
+  color: #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.comments ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+
+.comments ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.comments ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+  border: 2px solid #e9a1ff;
+}
+/*# sourceMappingURL=comments.css.map */

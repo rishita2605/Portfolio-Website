@@ -1,0 +1,102 @@
+.navigation {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.1em;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding-left: 1em;
+  background-color: rgba(63, 41, 38, 0.7);
+  z-index: 10;
+}
+
+.navigation .nav-item {
+  margin-right: 1.5em;
+}
+
+.logo-query {
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10%;
+  width: 100%;
+  background-color: #3f2926;
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 1em;
+  letter-spacing: 0.1em;
+}
+
+.logo-query .logo {
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-size: cover;
+  height: 3.5em;
+  width: 14em;
+}
+
+.navigation .nav-item, .query .nav-item {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  background: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  color: #f0f0f0;
+}
+
+.navigation .nav-item::after, .query .nav-item::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-bottom: 3px solid #f0f0f0;
+  background-color: transparent;
+  height: 0em;
+  display: block;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  -webkit-transition: border 800ms ease, height 500ms ease 800ms, -webkit-transform 500ms ease;
+  transition: border 800ms ease, height 500ms ease 800ms, -webkit-transform 500ms ease;
+  transition: transform 500ms ease, border 800ms ease, height 500ms ease 800ms;
+  transition: transform 500ms ease, border 800ms ease, height 500ms ease 800ms, -webkit-transform 500ms ease;
+  width: 100%;
+}
+
+.navigation .nav-item:hover::after, .query .nav-item:hover::after {
+  background-color: #3F2926;
+  border-bottom: 3px solid #c7877f;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.navigation .selected {
+  padding: 0.1em 0.7em;
+  border-radius: 0.4em;
+  background-color: #2b1d1a !important;
+}
+/*# sourceMappingURL=navAndHeader.css.map */

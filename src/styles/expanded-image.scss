@@ -1,0 +1,116 @@
+$bg-brown:#895D57;
+$font-color:#f0f0f0;
+$dark-brown:#3F2926;
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    65% {
+        transform: translate(0, 15px);
+    }
+
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+@keyframes floating1 {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-7px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+.expanded-image {
+    height: 100%;
+    padding:9vh 0 ; 
+    display: flex;
+    //border: 2px solid yellow;
+    .main-img-parent {
+        //border: 2px solid greenyellow;
+        width: 55%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .main-img {
+            //border: 4px solid darkolivegreen;
+            
+            height: 95%;
+            width: 95%;
+            background-image: url('../images/living-room-581073_1920.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 10px 20px #3f292677;
+
+        }
+    }
+
+    .pattern {
+        //border: 2px solid rebeccapurple;
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        position: relative;
+        padding-left:1vw;
+
+        .pattern-heading {
+            font-family: 'Satisfy', cursive;
+            font-size: 2.6em;
+        }
+
+        .fake-div {
+            height: 67%;
+            width: 100%;
+            //border: 4px solid red;
+        }
+
+        .pattern-img-parent {
+            //height: 50vh;
+            //width: 40vw;
+            height: 70%;
+            width: 100%;
+            border: 3px solid $dark-brown;
+            border-radius: 600px;
+            position: absolute;
+            left: -10vw;
+            bottom:-2vh;
+            //background-color: #895d5736;
+            background-color: $bg-brown;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 3px 20px $dark-brown;
+            animation-name: floating1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+            .pattern-img {
+                height: 90%;
+                width: 91%;
+                //border: 2px solid darkcyan;
+                border-radius: 200px;
+                background-image: url('../images/pattern.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+
+}

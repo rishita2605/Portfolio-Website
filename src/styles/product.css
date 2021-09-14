@@ -1,0 +1,97 @@
+.product {
+  height: 80%;
+  width: 100vw;
+  /*------------------------------------------------------------------------------------------------------------------------------*/
+}
+
+.product figure,
+.product figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.product .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5% 1%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product .gallery:hover .product .gallery__image {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.product .gallery__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+}
+
+.product .gallery__link {
+  margin: 1vw;
+  overflow: hidden;
+}
+
+.product .gallery__link .gallery__image {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.product .gallery__link:hover .gallery__image {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-filter: sepia(0);
+          filter: sepia(0);
+}
+
+.product .gallery__link:hover .gallery__caption {
+  opacity: 1;
+}
+
+.product .gallery__thumb {
+  position: relative;
+}
+
+.product .gallery__image {
+  display: block;
+  width: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.product .gallery__image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.product .gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/*# sourceMappingURL=product.css.map */

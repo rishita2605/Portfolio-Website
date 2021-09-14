@@ -1,0 +1,78 @@
+.about {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vw;
+  margin: auto;
+}
+
+.about .about-text-content {
+  width: 72vw;
+}
+
+.about .about-text-content .about-heading {
+  letter-spacing: 0.05em;
+  font-size: 1.4em;
+  margin-bottom: 0.7em;
+}
+
+.about .about-text-content .about-content {
+  font-weight: 100;
+  font-size: 1.1em;
+}
+
+.about .about-text-content .sign {
+  height: 10vw;
+  background-image: url("../images/sign.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about .about-text-content .owner {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: 'Prata', serif;
+  text-align: center;
+}
+
+.about .about-text-content .owner .owner-name {
+  font-size: 1.1em;
+}
+
+.about .about-text-content .owner .designation {
+  font-size: 0.8em;
+}
+
+.about .about-image-parent {
+  height: 15vw;
+  width: 15vw;
+  border: 2px solid #3F2926;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-image-parent .about-image {
+  height: 95%;
+  width: 95%;
+  border-radius: 100%;
+  background-image: url("../images/vampire.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=about.css.map */
