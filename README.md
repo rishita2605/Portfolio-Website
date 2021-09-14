@@ -46,13 +46,15 @@ https://user-images.githubusercontent.com/64982040/133221787-567a5648-3f01-4492-
 
 <img width="640" alt="Sentiment Analysis Snippet" src="https://user-images.githubusercontent.com/64982040/133222675-bf1942f2-bb83-4dea-98a9-8d488a6f7e93.png">
 
-### To run the project 
+## To run the project 
 
 `$ npm i`
 
 `$ npm run dev`
 
-### To Install Python Dependencies 
-`pip freeze > requirements.txt`
+### Install Python Dependencies
+
+<!--saving python dependencies-->
+<!--`pip freeze > requirements.txt`-->
 
 `pip install -r requirements.txt`
