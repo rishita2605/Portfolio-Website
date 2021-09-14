@@ -39,6 +39,13 @@ https://user-images.githubusercontent.com/64982040/133220863-863a3280-2f27-4e0f-
 <img width="1440" alt="Screenshot 2021-07-27 at 6 35 47 PM" src="https://user-images.githubusercontent.com/64982040/133215684-ca68c222-3c64-4763-86db-074889d3e1b7.png">
 
 
+
+https://user-images.githubusercontent.com/64982040/133221787-567a5648-3f01-4492-b955-f326bbdb7344.mov
+
+### Sentiment Analysis Snippet
+
+<img width="640" alt="Sentiment Analysis Snippet" src="https://user-images.githubusercontent.com/64982040/133222675-bf1942f2-bb83-4dea-98a9-8d488a6f7e93.png">
+
 ### To run the project 
 
 `$ npm i`
