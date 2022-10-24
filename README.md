@@ -23,7 +23,7 @@ This website includes a gallery to display the product of the textile designer a
 ![](https://img.shields.io/badge/Anaconda-informational?style=for-the-badge&logo=anaconda&labelColor=3F2926&color=895D57&logoColor=ffffff) &nbsp;
 
 ## Screenshots & Videos
-### HomePage
+### HomePage 
 
 https://user-images.githubusercontent.com/64982040/133218368-b78e436a-34b4-4912-b827-d1f19259b805.mp4
 
